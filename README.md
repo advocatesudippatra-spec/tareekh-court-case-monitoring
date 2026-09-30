@@ -97,8 +97,9 @@ If no AI service is connected, Tareekh says **"Connect an AI service first"** an
 
 ### How to switch on AI reading (optional)
 1. Get an API key from one of: Google AI Studio (Gemini), platform.openai.com (OpenAI), console.anthropic.com (Claude), Alibaba Cloud Model Studio (Qwen) or platform.moonshot.ai (Kimi).
-2. In Tareekh, open **Settings › Reading summons with AI (optional)**, choose the service and paste the key. The model is filled in for you; change it only if the service asks.
-3. Share or upload a summons as usual. Tareekh says *Reading with …* and fills the case form. If the service cannot be reached, Tareekh says so and uses the phone's own reading.
+2. In Tareekh, open **Settings › Reading with AI (optional)**, choose the service and paste the key. The model is filled in for you.
+3. Tap **Test connection**: Tareekh confirms the key is saved and accepted, finds the right server (Kimi and Qwen have China and international servers), lists the models your key may use, and picks one that reads pictures. If an AI request ever says a model was *not found*, Tareekh finds a working one by itself and tries again.
+4. Share or upload a summons as usual. Tareekh says *Reading with …* and fills the case form. If the service cannot be reached, Tareekh says so and uses the phone's own reading.
 
 ### Version history
 - **2.3** (1 Oct 2026): **Check here** on every case and **Check all here** for the evening checks: only the court's CAPTCHA is shown in Tareekh, and the case (next date, hearings, orders, calendar) is updated from it; Supreme Court cases can be checked too.
