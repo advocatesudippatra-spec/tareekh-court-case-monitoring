@@ -9,9 +9,9 @@
 
 <p align="center">Tap the button on your Android phone to download the app directly · <a href="docs/Tareekh-Screen-Guide.pdf">Screen guide (PDF)</a> · <a href="docs/Tareekh-Features.pdf">Features (PDF)</a></p>
 
-**Tareekh** (*tareekh*, the date of a hearing) is an Android case diary for advocates. It keeps every matter you appear in, in any district court in India, any of the 25 High Courts or the Supreme Court, and does the tiring part of practice for you: it finds each next date on eCourts, files the court's orders in a folder for every case, reminds you of hearings and fees, puts every date in your Google Calendar, and lets you send your client a WhatsApp reminder in one tap. It reads summonses, orders and eCourts screenshots with the phone's camera, and imports your whole eCourts app case list at once.
+**Tareekh** (*tareekh*, the date of a hearing) is an Android case diary for advocates. It keeps every matter you appear in, in any district court in India, any of the 25 High Courts or the Supreme Court, and does the tiring part of practice for you: it finds each next date on eCourts, files the court's orders in a folder for every case, reminds you of hearings and fees, puts every date in your Google Calendar, and lets you send your client a WhatsApp reminder in one tap. It reads summonses, orders and eCourts screenshots with the phone's camera (and, if you wish, with an AI service using your own API key), and imports your whole eCourts app case list at once. Cases are searched **inside Tareekh** (district courts, High Courts and the Supreme Court), and **every order of every case is kept on your phone**, so it can be read even when the internet is off.
 
-Tareekh opens the **public** case status pages of eCourts, the High Courts and the Supreme Court inside the app. You type every CAPTCHA; everything around it is done for you. Tareekh is not affiliated with eCourts, NIC or any court.
+Tareekh works with the **public** case status pages of eCourts, the High Courts and the Supreme Court from inside the app: you choose the court, case type, number and year on Tareekh's own screen, the court's CAPTCHA picture is shown there, you type the answer, and the case opens in Tareekh. There is no need to visit the court's website yourself (it can still be seen with *Court's page*). Tareekh is not affiliated with eCourts, NIC or any court.
 
 **Guide (every feature, and every screen explained with arrows):** [`docs/index.html`](docs/index.html) · PDF: [screen guide](docs/Tareekh-Screen-Guide.pdf), [features](docs/Tareekh-Features.pdf) · **Download the app:** [Tareekh-2.1.apk](https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.1.apk)
 
@@ -23,9 +23,42 @@ Tareekh opens the **public** case status pages of eCourts, the High Courts and t
 
 ## What's new in 2.1
 
-- **Search inside Tareekh**: for District Courts, the High Courts and the Supreme Court, search by **case type + number + year**, by **party name + year**, by **filing number** (Supreme Court: **diary number**), or by **CNR**. Case types are picked from each court's own list. The court's CAPTCHA picture is shown in Tareekh; you type the answer, and the case (or a list of cases to choose from) opens on Tareekh's own screen. *Court's page* shows the court's website at any time.
-- **Summons reading**: case numbers such as `CS/ 213819/26`, the person summoned (*To.*), the complainant and short Act names (BNS, BNSS, BSA, IPC, CrPC, NI Act…) are read more reliably.
-- **Optional AI reading**: in Settings you can choose Google Gemini, OpenAI, Claude, Qwen or Kimi with your own API key; the page picture is then also read by that service. Off by default; the phone's own reading is always used as well.
+**1. Search inside Tareekh: no need to visit the court's website**
+- For **district courts, all 25 High Courts and the Supreme Court**, search from Tareekh's own screen in four ways: **case type + number + year**, **party name + year**, **filing number** (Supreme Court: **diary number**), or **CNR**.
+- **Case types are chosen from lists**: every High Court bench's own list (WPA, CRR, FMA…), the Supreme Court's list, and each district court's own list (read from eCourts the first time a court is used, then remembered).
+- The court's **CAPTCHA picture is shown in Tareekh**; type the answer and tap Search. The case opens on Tareekh's screen, or a list of matching cases to tap. Tap **Save to My Cases (with orders)** to keep it.
+- *Court's page* (top right) shows the court's own website at any time, if you want to see it.
+
+**2. Every order, on your phone, even without internet**
+- Something the eCourts app does not do for you: once a case is saved from the court's page, **all its orders are downloaded** into a folder for that case, and new orders are added at every check. They open any time, **even when the internet is off**.
+
+**3. Better reading of summons, and optional AI reading with your own API key**
+- The phone now reads case numbers written like `CS/ 213819/26`, the person summoned (*To.*), the complainant, and short Act names (BNS, BNSS, BSA, IPC, CrPC, NI Act…).
+- **Optional:** in *Settings › Reading summons with AI*, choose **Google Gemini, OpenAI (ChatGPT), Claude, Qwen or Kimi** and paste your **API key** from that service. Every summons, notice, order or WhatsApp photo you share or upload is then also read by that AI, which handles poor photos, handwriting and unusual layouts far better. The phone's own reading still fills anything the AI leaves out. It is **off by default**; the AI service bills your own account.
+
+### How to use the new search
+1. Open **Search** and tap **District courts**, **High Courts** or **Supreme Court**.
+2. District courts: choose the court (state, district, court complex). High Courts: choose the High Court and bench/side.
+3. Under **Search in Tareekh**, pick *Case no.*, *Party name*, *Filing no.* / *Diary no.* or *CNR*.
+4. Pick the case type from the list (type a few letters to narrow it), then enter the number and year (or the party name and year, or the CNR). Tap **Search**.
+5. Type the letters (or, for the Supreme Court, the answer to the sum) shown in the picture and tap **Search**. Tap the refresh button for a new picture.
+6. The case opens in Tareekh. Tap **Save to My Cases (with orders)**: the case is saved and all its orders are downloaded.
+
+### How to switch on AI reading (optional)
+1. Get an API key from one of: Google AI Studio (Gemini), platform.openai.com (OpenAI), console.anthropic.com (Claude), Alibaba Cloud Model Studio (Qwen) or platform.moonshot.ai (Kimi).
+2. In Tareekh, open **Settings › Reading summons with AI (optional)**, choose the service and paste the key. The model is filled in for you; change it only if the service asks.
+3. Share or upload a summons as usual. Tareekh says *Reading with …* and fills the case form. If the service cannot be reached, Tareekh says so and uses the phone's own reading.
+
+### Version history
+- **2.1** (1 Oct 2026): search inside Tareekh with the CAPTCHA on Tareekh's screen (district courts, High Courts, Supreme Court; case number, party name, filing/diary number, CNR); case types from lists; better summons reading; optional AI reading (Gemini, OpenAI, Claude, Qwen, Kimi) with your own API key.
+- **2.0**: About section, justified text, public download page.
+- **1.9**: party names read more reliably; full screen guide.
+- **1.8**: WhatsApp reminder to the client.
+- **1.7**: cases saved under the client's name first.
+- **1.6**: case types of every High Court bench built in.
+- **1.5**: import of the eCourts app's *My Cases* list.
+- **1.4**: every order saved in a folder per case.
+- **1.0 to 1.3**: next-date checks at 6:30 pm, calendar, reminders, cause lists, notes, dark mode.
 
 ## Your day with Tareekh
 
@@ -44,7 +77,7 @@ Tareekh opens the **public** case status pages of eCourts, the High Courts and t
 ```
  Summons / order / screenshot ──► read on the phone ──► your case list ◄── eCourts app "My Cases" import
                                                               │
-         6:30 pm check ──► court's own page, filled in ──► you type the CAPTCHA
+  Search / 6:30 pm check ──► court's page, filled in ──► you type the CAPTCHA in Tareekh
                                                               │
                      next date · stage · hearings · orders (PDF, one folder per case)
                                                               │
@@ -58,11 +91,13 @@ Everything is stored on your phone. Tareekh talks only to the court websites you
 **Your cases in one place**
 - Add a case by hand, by typing it the way you write it (*TS 245/2026 Baruipur*, *WPA 12345/2024*), or from a document.
 - **Upload or share** a summons, order, notice, plaint or eCourts screenshot (PDFs up to 3 pages). The phone reads it and fills in the court, case type, number, year, hearing date and both parties. Tables in screenshots are read column by column.
+- **Optional AI reading** (new in 2.1): with your own API key for Google Gemini, OpenAI, Claude, Qwen or Kimi, every paper you share (summons, notice, order, WhatsApp photo) is also read by that AI for the best accuracy.
 - If an important detail is missing, Tareekh says **"Court details are missing"**: fill them in, or save as it is.
 - You choose **whose name the case is saved under** (petitioner, respondent or your client), as *Name + case number* (`Saman WPA 12345-2024`) or *Name only*. The name always comes first.
 - **Import your eCourts app case list** (*myCases.txt* and *hcMyCases.txt*) in one step; imported again, cases are updated, never duplicated.
 
 **Next dates, found for you**
+- **Search in Tareekh** (new in 2.1): case type + number + year, party name + year, filing / diary number, or CNR, for district courts, High Courts and the Supreme Court. The CAPTCHA is shown on Tareekh's screen and the case opens there.
 - **Check on eCourts** opens the court's own page with the case already filled in (CNR, or case type, number and year).
 - The next date, stage, judge, parties, acts and full hearing history are read and saved.
 - **Manual override:** enter the date yourself when eCourts is down or late.
@@ -70,7 +105,7 @@ Everything is stored on your phone. Tareekh talks only to the court websites you
 
 **Court orders, filed per case**
 - Every order uploaded on eCourts is downloaded when you open the case there, including orders that appear late on High Court pages.
-- Saved in `Download/Tareekh/Orders/<client name> <case number>/`, one folder per case, each file named by date (`2026-09-12 Order 1.pdf`). Open or share them from the case; they stay even if the app is removed.
+- Saved in `Download/Tareekh/Orders/<client name> <case number>/`, one folder per case, each file named by date (`2026-09-12 Order 1.pdf`). Open or share them from the case, **even with the internet off**; they stay even if the app is removed. (The eCourts app does not keep a case's orders for you like this.)
 
 **Reminders and calendar**
 - Every hearing goes into your **Google Calendar** with alerts 2 days before and at 8 am, and moves when the date changes.
@@ -192,6 +227,8 @@ Court-wise search. The kind of court with most of your cases opens first.
 3. **Find a case**: Type the case as you would write it; Tareekh fills the eCourts form and you type the CAPTCHA.
 4. **Open by CNR**: The quickest search: the 16-character CNR number.
 
+*New in 2.1:* the **Search in Tareekh** box below the court (case no., party name, filing no., CNR) does the whole search on Tareekh's screen, with the CAPTCHA shown in the app. See [How to use the new search](#how-to-use-the-new-search).
+
 ### 9 · Search: High Courts
 
 All 25 High Courts and their 44 benches, opened on their own eCourts pages.
@@ -202,6 +239,8 @@ All 25 High Courts and their 44 benches, opened on their own eCourts pages.
 2. **Bench / side**: Appellate Side, Original Side, circuit benches: every bench has its own page.
 3. **All searches**: That bench's full eCourts menu (case number, party, advocate, orders, cause list).
 4. **Case number**: WPA, CRR, FMA…: the case type, number and year are filled in; you type the CAPTCHA.
+
+*New in 2.1:* **Search in Tareekh** for the chosen bench: case no. (case type from the bench's own list), party name, filing no. or CNR, with the CAPTCHA shown in the app. The Supreme Court has the same box (case no., diary no., party name, CNR).
 
 ### 10 · Choosing any court in India
 
@@ -273,6 +312,7 @@ Backup, your WhatsApp wording and the look of the app.
 2. **WhatsApp reminder message**: Your own wording; {client} {case} {court} {date} {purpose} are filled in for each case.
 3. **Appearance**: Phone setting, Light or Dark.
 4. **Court websites**: If a court page keeps showing old results, clear what the built-in browser stored.
+5. **Reading summons with AI (optional, new in 2.1)**: Choose Google Gemini, OpenAI, Claude, Qwen or Kimi and paste your API key.
 
 ### 17 · About
 
@@ -304,7 +344,7 @@ Settings › Appearance › Dark (or follow the phone).
 
 ## Your data
 
-- Cases, notes and orders stay **on your phone**. Nothing is sent to Patra's Law Chambers or anyone else.
+- Cases, notes and orders stay **on your phone**. Nothing is sent to Patra's Law Chambers or anyone else. Only if you switch on AI reading is the picture of a paper you share sent to the AI service you chose, under your own API key.
 - **Settings › Export** saves a backup file (cases and notes) to keep in Google Drive; **Import** restores it on a new phone. Copy the `Download/Tareekh` folder to keep the order PDFs.
 - Tareekh never types a CAPTCHA and never logs in to anything; it only fills in the court's public search forms.
 
@@ -312,7 +352,13 @@ Settings › Appearance › Dark (or follow the phone).
 
 **Does it work without eCourts?** Yes: dates can be entered by hand, and all reminders, the calendar, notes and orders already saved work offline. Only new dates and new orders need the court's website.
 
-**Why do I still type a CAPTCHA?** The courts protect their pages with one, and Tareekh respects it. Everything else on the page is filled in for you.
+**Why do I still type a CAPTCHA?** The courts protect their pages with one, and Tareekh respects it. The picture is shown on Tareekh's own screen; everything else is filled in for you.
+
+**Do I need to open the court's website?** No. Search in Tareekh does it for you out of sight; *Court's page* shows it only if you want to see it.
+
+**Can I read orders without internet?** Yes. Every saved order is a PDF on your phone, in the case's own folder.
+
+**Do I need an API key?** No. The phone reads papers by itself. An API key (Gemini, OpenAI, Claude, Qwen or Kimi) is optional, for better reading of difficult papers; that service bills your account.
 
 **Can WhatsApp reminders go by themselves?** WhatsApp does not let any app send from your number without you; Tareekh opens the chat with the message typed and you tap Send.
 
