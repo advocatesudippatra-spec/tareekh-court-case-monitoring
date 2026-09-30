@@ -13,7 +13,7 @@
 
 Tareekh works with the **public** case status pages of eCourts, the High Courts and the Supreme Court from inside the app: you choose the court, case type, number and year on Tareekh's own screen, the court's CAPTCHA picture is shown there, you type the answer, and the case opens in Tareekh. There is no need to visit the court's website yourself (it can still be seen with *Court's page*). Tareekh is not affiliated with eCourts, NIC or any court.
 
-**Guide (every feature, and every screen explained with arrows):** [`docs/index.html`](docs/index.html) · PDF: [screen guide](docs/Tareekh-Screen-Guide.pdf), [features](docs/Tareekh-Features.pdf) · **Download the app:** [Tareekh-2.3.apk](https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.3.apk)
+**Website:** https://advocatesudippatra-spec.github.io/tareekh-court-case-monitoring/ · **Guide (every feature, and every screen explained with arrows):** [`docs/guide.html`](docs/guide.html) · PDF: [screen guide](docs/Tareekh-Screen-Guide.pdf), [features](docs/Tareekh-Features.pdf) · **Download the app:** [Tareekh-2.3.apk](https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.3.apk)
 
 `#Tareekh` `#CaseDiary` `#eCourts` `#CourtCaseStatus` `#CauseList` `#DistrictCourt` `#HighCourt` `#CalcuttaHighCourt` `#SupremeCourtOfIndia` `#LegalTech` `#AdvocateApp` `#LawyerApp` `#IndianLaw` `#NextDate` `#HearingReminder` `#CourtOrders` `#AndroidApp` `#PatrasLawChambers`
 
