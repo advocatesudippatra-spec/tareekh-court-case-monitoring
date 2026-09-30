@@ -5,7 +5,7 @@
 
 ![Tareekh: case diary for advocates](docs/img/banner.jpg)
 
-<p align="center"><a href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.0.apk"><img src="docs/img/download-button.png" alt="Download Tareekh 2.0 for Android (APK)" width="340"></a></p>
+<p align="center"><a href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.1.apk"><img src="docs/img/download-button.png" alt="Download Tareekh 2.1 for Android (APK)" width="340"></a></p>
 
 <p align="center">Tap the button on your Android phone to download the app directly · <a href="docs/Tareekh-Screen-Guide.pdf">Screen guide (PDF)</a> · <a href="docs/Tareekh-Features.pdf">Features (PDF)</a></p>
 
@@ -13,13 +13,19 @@
 
 Tareekh opens the **public** case status pages of eCourts, the High Courts and the Supreme Court inside the app. You type every CAPTCHA; everything around it is done for you. Tareekh is not affiliated with eCourts, NIC or any court.
 
-**Guide (every feature, and every screen explained with arrows):** [`docs/index.html`](docs/index.html) · PDF: [screen guide](docs/Tareekh-Screen-Guide.pdf), [features](docs/Tareekh-Features.pdf) · **Download the app:** [Tareekh-2.0.apk](https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.0.apk)
+**Guide (every feature, and every screen explained with arrows):** [`docs/index.html`](docs/index.html) · PDF: [screen guide](docs/Tareekh-Screen-Guide.pdf), [features](docs/Tareekh-Features.pdf) · **Download the app:** [Tareekh-2.1.apk](https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.1.apk)
 
 `#Tareekh` `#CaseDiary` `#eCourts` `#CourtCaseStatus` `#CauseList` `#DistrictCourt` `#HighCourt` `#CalcuttaHighCourt` `#SupremeCourtOfIndia` `#LegalTech` `#AdvocateApp` `#LawyerApp` `#IndianLaw` `#NextDate` `#HearingReminder` `#CourtOrders` `#AndroidApp` `#PatrasLawChambers`
 
-**Contents:** [Your day](#your-day-with-tareekh) · [How it works](#how-it-works) · [Features](#features) · [Screen guide](#screen-guide) · [Download and install](#install) · [Your data](#your-data) · [Copyright](#copyright) · [Questions](#questions) · [About](#about-patras-law-chambers)
+**Contents:** [What's new](#whats-new-in-21) · [Your day](#your-day-with-tareekh) · [How it works](#how-it-works) · [Features](#features) · [Screen guide](#screen-guide) · [Download and install](#install) · [Your data](#your-data) · [Copyright](#copyright) · [Questions](#questions) · [About](#about-patras-law-chambers)
 
 ---
+
+## What's new in 2.1
+
+- **Search inside Tareekh**: for District Courts, the High Courts and the Supreme Court, search by **case type + number + year**, by **party name + year**, by **filing number** (Supreme Court: **diary number**), or by **CNR**. Case types are picked from each court's own list. The court's CAPTCHA picture is shown in Tareekh; you type the answer, and the case (or a list of cases to choose from) opens on Tareekh's own screen. *Court's page* shows the court's website at any time.
+- **Summons reading**: case numbers such as `CS/ 213819/26`, the person summoned (*To.*), the complainant and short Act names (BNS, BNSS, BSA, IPC, CrPC, NI Act…) are read more reliably.
+- **Optional AI reading**: in Settings you can choose Google Gemini, OpenAI, Claude, Qwen or Kimi with your own API key; the page picture is then also read by that service. Off by default; the phone's own reading is always used as well.
 
 ## Your day with Tareekh
 
@@ -287,9 +293,9 @@ Settings › Appearance › Dark (or follow the phone).
 
 ## Install
 
-<p align="center"><a href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.0.apk"><img src="docs/img/download-button.png" alt="Download Tareekh 2.0 for Android (APK)" width="340"></a></p>
+<p align="center"><a href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.1.apk"><img src="docs/img/download-button.png" alt="Download Tareekh 2.1 for Android (APK)" width="340"></a></p>
 
-1. On your Android phone, tap **Download Tareekh 2.0** above (or [this link](https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.0.apk)); the APK (21 MB) downloads directly.
+1. On your Android phone, tap **Download Tareekh 2.1** above (or [this link](https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.1.apk)); the APK (21 MB) downloads directly.
 2. Open it; allow installs from that source once; tap **Install**. A new version installs over the old one and keeps your cases, notes and orders.
 3. Open Tareekh and tap **Allow** for notifications and calendar. Set **Battery › Unrestricted** for Tareekh so the 6:30 pm check always comes.
 4. Add your cases: **Settings › Import** your eCourts app *My Cases* export, upload documents, or type them.
@@ -338,7 +344,7 @@ Founded in 2020 in Kolkata, with a second chamber in New Delhi since 2023, the f
 
 ---
 
-<p align="center"><a href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.0.apk"><img src="docs/img/download-button.png" alt="Download Tareekh 2.0 for Android (APK)" width="340"></a></p>
+<p align="center"><a href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.1.apk"><img src="docs/img/download-button.png" alt="Download Tareekh 2.1 for Android (APK)" width="340"></a></p>
 
 <p align="center">© 2026 Patra's Law Chambers · All rights reserved</p>
 
