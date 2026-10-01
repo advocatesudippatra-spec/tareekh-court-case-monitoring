@@ -5,7 +5,7 @@
 
 ![Tareekh: case diary for advocates](docs/img/banner.jpg)
 
-<p align="center"><a href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.3.apk"><img src="docs/img/download-button.png" alt="Download Tareekh 2.3 for Android (APK)" width="340"></a></p>
+<p align="center"><a href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.4.apk"><img src="docs/img/download-button.png" alt="Download Tareekh 2.4 for Android (APK)" width="340"></a></p>
 
 <p align="center">Tap the button on your Android phone to download the app directly · <a href="docs/Tareekh-Screen-Guide.pdf">Screen guide (PDF)</a> · <a href="docs/Tareekh-Features.pdf">Features (PDF)</a></p>
 
@@ -13,15 +13,36 @@
 
 Tareekh works with the **public** case status pages of eCourts, the High Courts and the Supreme Court from inside the app: you choose the court, case type, number and year on Tareekh's own screen, the court's CAPTCHA picture is shown there, you type the answer, and the case opens in Tareekh. There is no need to visit the court's website yourself (it can still be seen with *Court's page*). Tareekh is not affiliated with eCourts, NIC or any court.
 
-**Website:** https://advocatesudippatra-spec.github.io/tareekh-court-case-monitoring/ · **Guide (every feature, and every screen explained with arrows):** [`docs/guide.html`](docs/guide.html) · PDF: [screen guide](docs/Tareekh-Screen-Guide.pdf), [features](docs/Tareekh-Features.pdf) · **Download the app:** [Tareekh-2.3.apk](https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.3.apk)
+**Website:** https://advocatesudippatra-spec.github.io/tareekh-court-case-monitoring/ · **Guide (every feature, and every screen explained with arrows):** [`docs/guide.html`](docs/guide.html) · PDF: [screen guide](docs/Tareekh-Screen-Guide.pdf), [features](docs/Tareekh-Features.pdf) · **Download the app:** [Tareekh-2.4.apk](https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.4.apk)
 
 `#Tareekh` `#CaseDiary` `#eCourts` `#CourtCaseStatus` `#CauseList` `#DistrictCourt` `#HighCourt` `#CalcuttaHighCourt` `#SupremeCourtOfIndia` `#LegalTech` `#AdvocateApp` `#LawyerApp` `#IndianLaw` `#NextDate` `#HearingReminder` `#CourtOrders` `#AndroidApp` `#PatrasLawChambers`
 
-**Contents:** [What's new](#whats-new-in-23) · [Your day](#your-day-with-tareekh) · [How it works](#how-it-works) · [Features](#features) · [Screen guide](#screen-guide) · [Download and install](#install) · [Your data](#your-data) · [Copyright](#copyright) · [Questions](#questions) · [About](#about-patras-law-chambers)
+**Contents:** [What's new](#whats-new-in-24) · [Your day](#your-day-with-tareekh) · [How it works](#how-it-works) · [Features](#features) · [Screen guide](#screen-guide) · [Download and install](#install) · [Your data](#your-data) · [Copyright](#copyright) · [Questions](#questions) · [About](#about-patras-law-chambers)
 
 ---
 
-## What's new in 2.3
+## What's new in 2.4
+
+**AI for whole cases, and for finding cases, at the lowest AI cost.** Every order is read **on the phone**, straight from the PDF (typed orders need no OCR; only scanned pages are read by OCR), kept as text, and indexed on the phone by keywords and by meaning. So only the passages that matter are sent to the AI service you connected.
+
+- **Case synopsis**: a date-wise synopsis of the whole case from all its saved orders, in English, Bengali or Hindi. Tareekh shows the size and AI cost **before** it runs; each order is summarised once and kept, so later updates cost only the new orders.
+- **Ask about this case**: questions about the whole case; only the 5 to 8 matching passages of the orders are sent, and every point names its order date.
+- **Ask AI to find a case**: in your own words ("CS 213819/26 Bankshall, can't find it") or with a summons attached. Tareekh checks your saved cases first ("Already in your cases" or "New case"), suggests the exact searches as buttons, and gives tips for cases hard to find.
+- **Ask AI about my cases**: "My High Court matters this month", "Lower court hearings next week"; the answer and the cases, ready to open.
+- **Cause lists in plain words**: "Calcutta Original Side tomorrow" opens that list.
+- **Lower cost everywhere**: Explain, Appeal and Ask on an order now send text only, without page pictures; an optional **economy model** can do the summaries.
+
+| Case AI on a case | Cost before the synopsis | The synopsis | Ask about this case |
+|:-:|:-:|:-:|:-:|
+| <img src="docs/guide/new24-card.png" width="200"> | <img src="docs/guide/new24-plan.png" width="200"> | <img src="docs/guide/new24-syn.png" width="200"> | <img src="docs/guide/new24-ask.png" width="200"> |
+
+| Ask AI to find a case | The case, found | Ask AI about my cases | Cause lists in plain words |
+|:-:|:-:|:-:|:-:|
+| <img src="docs/guide/new24-search.png" width="200"> | <img src="docs/guide/new24-find.png" width="200"> | <img src="docs/guide/new24-cases.png" width="200"> | <img src="docs/guide/new24-cause.png" width="200"> |
+
+**Readable guide to 2.4:** [What's new in 2.4 (PDF)](docs/Tareekh-Whats-New-2.4.pdf) · [web page](docs/whats-new-2.4.html). *(Made-up example cases.)*
+
+## What came in 2.3
 
 **Check a case's next date without opening the court's website.** Every saved case now has **Check here** next to **Check on eCourts** (which stays exactly as before):
 
@@ -102,6 +123,7 @@ If no AI service is connected, Tareekh says **"Connect an AI service first"** an
 4. Share or upload a summons as usual. Tareekh says *Reading with …* and fills the case form. If the service cannot be reached, Tareekh says so and uses the phone's own reading.
 
 ### Version history
+- **2.4**: case synopsis and Ask about this case (orders read on the phone, indexed by keywords and meaning, only matching passages sent); Ask AI to find a case, from your words or a summons; Ask AI about my cases; cause lists in plain words; text-only AI for orders; optional economy model.
 - **2.3** (1 Oct 2026): **Check here** on every case and **Check all here** for the evening checks: only the court's CAPTCHA is shown in Tareekh, and the case (next date, hearings, orders, calendar) is updated from it; Supreme Court cases can be checked too.
 - **2.2** (1 Oct 2026): ⋮ menu on every order with **Explain in simple terms** (English, Bengali, Hindi), **Appeal: where and by when** (forum, provision, limitation, last date, calendar) and **Ask about this order**; without an AI service, Tareekh asks you to connect one first.
 - **2.1** (1 Oct 2026): search inside Tareekh with the CAPTCHA on Tareekh's screen (district courts, High Courts, Supreme Court; case number, party name, filing/diary number, CNR); case types from lists; better summons reading; optional AI reading (Gemini, OpenAI, Claude, Qwen, Kimi) with your own API key.
@@ -166,6 +188,11 @@ Everything is stored on your phone. Tareekh talks only to the court websites you
 - **Explain in simple terms** in English, Bengali or Hindi, ready to share with the client.
 - **Appeal: where and by when**: forum, provision, limitation period, last date, and a calendar entry for the deadline.
 - **Ask about this order**: questions and follow-ups about the order.
+
+**AI for whole cases** (new in 2.4, needs an AI service with your API key)
+- **Case synopsis**, date-wise, from all saved orders; the cost is shown first, and each order is summarised once.
+- **Ask about this case**: only the matching passages of the orders are sent.
+- **Ask AI to find a case**, in your words or from a summons; **Ask AI about my cases**; **cause lists in plain words**.
 
 **Reminders and calendar**
 - Every hearing goes into your **Google Calendar** with alerts 2 days before and at 8 am, and moves when the date changes.
@@ -393,9 +420,9 @@ Settings › Appearance › Dark (or follow the phone).
 
 ## Install
 
-<p align="center"><a href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.3.apk"><img src="docs/img/download-button.png" alt="Download Tareekh 2.3 for Android (APK)" width="340"></a></p>
+<p align="center"><a href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.4.apk"><img src="docs/img/download-button.png" alt="Download Tareekh 2.4 for Android (APK)" width="340"></a></p>
 
-1. On your Android phone, tap **Download Tareekh 2.3** above (or [this link](https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.3.apk)); the APK (21 MB) downloads directly.
+1. On your Android phone, tap **Download Tareekh 2.4** above (or [this link](https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.4.apk)); the APK (about 47 MB) downloads directly.
 2. Open it; allow installs from that source once; tap **Install**. A new version installs over the old one and keeps your cases, notes and orders.
 3. Open Tareekh and tap **Allow** for notifications and calendar. Set **Battery › Unrestricted** for Tareekh so the 6:30 pm check always comes.
 4. Add your cases: **Settings › Import** your eCourts app *My Cases* export, upload documents, or type them.
@@ -423,6 +450,8 @@ Settings › Appearance › Dark (or follow the phone).
 **Can Tareekh tell me where to appeal and by when?** Yes, with an AI service connected: order ⋮ › *Appeal: where and by when*. It is guidance: verify the forum and limitation before filing.
 
 **Can my client read the order in Bengali or Hindi?** Order ⋮ › *Explain in simple terms* › বাংলা or हिन्दी, then *Share with client*.
+
+**How much AI does a synopsis use?** Tareekh shows it before running. Typed orders are read from the PDF on the phone (no OCR), only text is sent, and each order is summarised once, so later updates cost only the new orders.
 
 **Do I need an API key?** No. The phone reads papers by itself. An API key (Gemini, OpenAI, Claude, Qwen or Kimi) is optional, for better reading of difficult papers; that service bills your account.
 
@@ -456,7 +485,7 @@ Founded in 2020 in Kolkata, with a second chamber in New Delhi since 2023, the f
 
 ---
 
-<p align="center"><a href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.3.apk"><img src="docs/img/download-button.png" alt="Download Tareekh 2.3 for Android (APK)" width="340"></a></p>
+<p align="center"><a href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.4.apk"><img src="docs/img/download-button.png" alt="Download Tareekh 2.4 for Android (APK)" width="340"></a></p>
 
 <p align="center">© 2026 Patra's Law Chambers · All rights reserved</p>
 

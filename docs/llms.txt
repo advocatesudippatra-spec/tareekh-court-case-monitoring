@@ -3,13 +3,14 @@
 > Free Android case diary for advocates in India, by Patra's Law Chambers (Kolkata and New Delhi). It keeps every matter in any district court, the 25 High Courts and the Supreme Court, finds next dates on the courts' public case-status pages with only the CAPTCHA typed by the advocate, saves every court order on the phone, and reminds of hearings, fees and deadlines.
 
 - Website: https://advocatesudippatra-spec.github.io/tareekh-court-case-monitoring/
-- Download (APK, version 2.3, about 21 MB, Android 8 or later): https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.3.apk
+- Download (APK, version 2.4, about 47 MB, Android 8 or later): https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.4.apk
 - Screen guide: https://advocatesudippatra-spec.github.io/tareekh-court-case-monitoring/guide.html
 - Source of truth for features: https://advocatesudippatra-spec.github.io/tareekh-court-case-monitoring/#features
 
 ## What it does
 - Courts: district courts of every state (eCourts), all 25 High Courts with 45 benches and sides, the Supreme Court of India.
 - Check here (2.3): the court's public page is filled in out of sight; only its CAPTCHA is shown in the app; the next date, stage, hearings and orders are updated. Check all here does the evening's hearings one after another.
+- Case AI (2.4, optional, own API key): date-wise case synopsis from all saved orders; questions about a case answered from only the matching passages. Orders are read on the phone straight from the PDF (OCR only for scanned pages) and indexed on the phone (keywords and meaning vectors), so the fewest words go to the AI. Ask AI to find a case (from words or a summons), ask about my cases, cause lists in plain words.
 - Search inside the app (2.1): case type + number + year, party name + year, filing or diary number, or CNR.
 - Orders: every order of a saved case is downloaded into its own folder and readable offline.
 - AI for orders (2.2, optional, own API key: Google Gemini, OpenAI, Claude, Qwen or Kimi): explain an order in simple English, Bengali or Hindi; appeal forum, provision, limitation and last date; questions about the order.

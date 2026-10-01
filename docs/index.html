@@ -35,10 +35,10 @@
   "applicationCategory": "BusinessApplication",
   "applicationSubCategory": "Legal case management",
   "operatingSystem": "Android 8.0 or later",
-  "softwareVersion": "2.3",
-  "fileSize": "21 MB",
-  "downloadUrl": "https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.3.apk",
-  "installUrl": "https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.3.apk",
+  "softwareVersion": "2.4",
+  "fileSize": "47 MB",
+  "downloadUrl": "https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.4.apk",
+  "installUrl": "https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.4.apk",
   "url": "https://advocatesudippatra-spec.github.io/tareekh-court-case-monitoring/",
   "inLanguage": "en-IN",
   "description": "Free Android case diary for advocates in India: district courts, all 25 High Courts and the Supreme Court. Next dates checked with only the CAPTCHA to type, every court order saved on the phone, hearings in Google Calendar, WhatsApp reminders to clients, cause lists, and optional AI explanation of orders and appeal deadlines.",
@@ -59,7 +59,11 @@
    "Google Calendar, hearing and fee reminders",
    "WhatsApp reminder to the client",
    "High Court, district and Supreme Court cause lists",
-   "Import of the eCourts app My Cases list"
+   "Import of the eCourts app My Cases list",
+   "Case synopsis, date-wise, from all saved orders (AI, own API key)",
+   "Ask about this case: only the matching passages of the orders are sent",
+   "Ask AI to find a case, from your words or a summons",
+   "Orders read on the phone straight from the PDF; OCR only for scanned pages"
   ],
   "screenshot": [
    "https://advocatesudippatra-spec.github.io/tareekh-court-case-monitoring/img/screens/check-all.jpg",
@@ -154,6 +158,14 @@
     "acceptedAnswer": {
      "@type": "Answer",
      "text": "Yes, with an AI service you connect using your own API key (Google Gemini, OpenAI, Claude, Qwen or Kimi). It explains an order in simple English, Bengali or Hindi, works out where an appeal lies and the last date to file, and answers questions about the order. Appeal guidance must be verified before filing."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How does Tareekh keep AI costs low?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Each order is read on the phone, straight from the PDF (OCR only for scanned pages), cleaned and indexed on the phone. A question sends only the few passages that match it; a synopsis summarises each order once and keeps the summary, so later updates cost only the new orders. The cost is shown before a synopsis runs."
     }
    },
    {
@@ -256,9 +268,9 @@
     <h1>Tareekh: Court Case Monitor</h1>
     <p class="lead">Every case you appear in, in any district court in India, the 25 High Courts and the Supreme Court. Next dates checked for you with only the CAPTCHA to type, every court order saved on your phone, and hearings in your calendar.</p>
     <div class="cta">
-      <a class="btn" href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.3.apk">
-        <img src="img/icon.png" alt=""><span>Download for Android<small>Version 2.3 · free</small></span></a>
-      <div class="meta">Android 8 or later · about 21 MB · open the downloaded file on your phone to install</div>
+      <a class="btn" href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.4.apk">
+        <img src="img/icon.png" alt=""><span>Download for Android<small>Version 2.4 · free</small></span></a>
+      <div class="meta">Android 8 or later · about 47 MB · open the downloaded file on your phone to install</div>
       <div class="share">
         <a class="wa" href="https://wa.me/?text=%E2%9A%96%EF%B8%8F%20%2ATareekh%20%E2%80%93%20Court%20Case%20Monitor%20for%20Android%2A%20%28free%20app%20for%20advocates%29%0ADistrict%20courts%2C%20all%20High%20Courts%20and%20the%20Supreme%20Court%3A%20next%20dates%20with%20only%20the%20CAPTCHA%2C%20every%20order%20saved%20on%20the%20phone%2C%20AI%20explanation%20of%20orders.%20Download%3A%20https%3A//advocatesudippatra-spec.github.io/tareekh-court-case-monitoring/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/></svg>Share on WhatsApp</a>
         <a class="fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fadvocatesudippatra-spec.github.io%2Ftareekh-court-case-monitoring%2F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>Share on Facebook</a>
@@ -275,6 +287,9 @@
   <p>Tareekh keeps every matter you appear in and does the tiring part of practice for you. It finds each next date on the courts' public case-status pages, files every court order in a folder for the case, reminds you of hearings and fees, puts every date in your Google Calendar, and lets you send your client a WhatsApp reminder in one tap. The court's page is filled in out of sight: you only type the CAPTCHA, on Tareekh's own screen.</p>
   <div class="grid">
     <div class="card"><h3>⚖️ Every court</h3><p>District courts of every state, all 25 High Courts with their 45 benches and sides, and the Supreme Court of India.</p></div>
+    <div class="card"><span class="new">2.4</span><h3>🧾 Case synopsis</h3><p>A date-wise synopsis of the whole case from all its orders, with the AI cost shown before it runs.</p></div>
+    <div class="card"><span class="new">2.4</span><h3>🔍 Ask AI to find a case</h3><p>In your own words or from a summons: checks your cases first, then suggests the exact search.</p></div>
+    <div class="card"><span class="new">2.4</span><h3>💡 Ask about a case</h3><p>Questions about a whole case; only the matching passages of its orders are sent to the AI.</p></div>
     <div class="card"><span class="new">2.3</span><h3>⚡ Check here</h3><p>Only the court's CAPTCHA appears in Tareekh. Type it, and the next date, stage, hearings and orders are updated.</p></div>
     <div class="card"><span class="new">2.3</span><h3>🌙 Check all here</h3><p>At 6:30 pm, all of the day's hearings, one after another, with a summary: checked, updated, unchanged.</p></div>
     <div class="card"><span class="new">2.1</span><h3>🔎 Search inside the app</h3><p>By case type, number and year; party name; filing or diary number; or CNR. Case types picked from each court's own list.</p></div>
@@ -289,6 +304,8 @@
   </div>
 
   <h2 id="new">What's new</h2>
+  <div class="note"><p><b>2.4 · AI for whole cases, at the lowest cost.</b> Every order is read <b>on the phone</b>, straight from the PDF (OCR only for scanned pages), and indexed on the phone. <b>Case synopsis</b> (date-wise, cost shown first, each order summarised once), <b>Ask about this case</b> (only matching passages sent), <b>Ask AI to find a case</b> (from your words or a summons; "already in your cases" or "new case"), <b>Ask AI about my cases</b>, and <b>cause lists in plain words</b>.</p></div>
+  <p></p>
   <div class="note"><p><b>2.3 · Check here.</b> Next to <i>Check on eCourts</i> on every case, <b>Check here</b> fills in the court's page out of sight and shows only its CAPTCHA; the case, its calendar entry and its orders are then updated, with a one-line summary of what changed. <b>Check all here</b> does the evening's checks one after another. Also in 2.3: <b>Test connection</b> for your AI key, which finds the right server and a model your key may use.</p></div>
   <p></p>
   <div class="note"><p><b>2.2 · AI help for orders.</b> Every saved order has a <b>⋮</b> menu: <i>Explain in simple terms</i> (English, বাংলা, हिन्दी), <i>Appeal: where and by when</i> and <i>Ask about this order</i>. These use the AI service you connect (Google Gemini, OpenAI, Claude, Qwen or Kimi) with your own API key; without one, Tareekh asks you to connect a service first. Appeal guidance must be verified before filing.</p></div>
@@ -298,7 +315,7 @@
   <h2 id="install">Install in four steps</h2>
   <ol class="steps">
     <li><b>Download</b> the app on your Android phone with the button above.</li>
-    <li><b>Open</b> the downloaded file (Tareekh-2.3.apk). The first time, Android asks to allow installs from your browser or Files app: allow it once, then tap <b>Install</b>. A new version installs over the old one and keeps your cases, notes and orders.</li>
+    <li><b>Open</b> the downloaded file (Tareekh-2.4.apk). The first time, Android asks to allow installs from your browser or Files app: allow it once, then tap <b>Install</b>. A new version installs over the old one and keeps your cases, notes and orders.</li>
     <li><b>Open Tareekh</b> and tap <b>Allow</b> for notifications and calendar. Set <b>Battery › Unrestricted</b> for Tareekh so the 6:30 pm check always comes (Xiaomi, Oppo, Vivo and Realme phones need this).</li>
     <li><b>Add your cases:</b> Settings › Import your eCourts app <i>My Cases</i> export, share documents to Tareekh, or type them the way you write them (<i>TS 245/2026 Baruipur</i>, <i>WPA 12345/2024</i>).</li>
   </ol>
@@ -319,6 +336,13 @@
     <figure><img src="img/cases.jpg" alt="Cases tab" loading="lazy"><figcaption><b>Cases.</b> Every matter by date, with a month calendar and filters by court.</figcaption></figure>
     <figure><img src="img/case_top.jpg" alt="A case" loading="lazy"><figcaption><b>Case details.</b> Next date, client, WhatsApp reminder, orders and notes.</figcaption></figure>
   </div>
+  <h3 class="sub">Case AI and finding cases</h3>
+  <div class="shots">
+    <figure><img src="img/screens/synopsis-cost.jpg" alt="Cost before the synopsis" loading="lazy"><figcaption><b>Before the synopsis.</b> Orders read on the phone; no OCR for typed PDFs; the AI cost shown first.</figcaption></figure>
+    <figure><img src="img/screens/synopsis.jpg" alt="Case synopsis" loading="lazy"><figcaption><b>Synopsis.</b> Date-wise, every point with its order date; English, Bengali or Hindi.</figcaption></figure>
+    <figure><img src="img/screens/ask-case.jpg" alt="Ask about this case" loading="lazy"><figcaption><b>Ask about this case.</b> Answered from the matching passages of the orders.</figcaption></figure>
+    <figure><img src="img/screens/find-case.jpg" alt="Ask AI to find a case" loading="lazy"><figcaption><b>Find a case.</b> In your words or from a summons; already saved, or new, with the exact searches.</figcaption></figure>
+  </div>
   <h3 class="sub">Court orders with AI</h3>
   <div class="shots">
     <figure><img src="img/screens/order-menu.jpg" alt="Order menu" loading="lazy"><figcaption><b>The ⋮ menu.</b> Open, Share, Explain, Appeal and Ask for every saved order.</figcaption></figure>
@@ -338,6 +362,7 @@
     <a href="guide.html">Screen guide (web)</a>
     <a href="Tareekh-Screen-Guide.pdf">Screen guide (PDF)</a>
     <a href="Tareekh-Features.pdf">Features (PDF)</a>
+    <a href="whats-new-2.4.html">What's new in 2.4</a>
     <a href="whats-new-2.3.html">What's new in 2.3</a>
     <a href="whats-new-2.2.html">What's new in 2.2</a>
   </div>
@@ -348,6 +373,7 @@
   <details class="faq"><summary>Does Tareekh solve the court's CAPTCHA?</summary><p>No. The court's CAPTCHA is always typed by you. Tareekh fills in the rest of the court's public search form out of sight and shows only the CAPTCHA picture on its own screen; the case is then updated from the court's answer.</p></details>
   <details class="faq"><summary>Can I read court orders without internet?</summary><p>Yes. Once a case is saved, all its orders are downloaded into a folder for that case (Download/Tareekh/Orders) and open any time, even offline. New orders are added at every check.</p></details>
   <details class="faq"><summary>Can Tareekh explain an order or tell me where to appeal?</summary><p>Yes, with an AI service you connect using your own API key (Google Gemini, OpenAI, Claude, Qwen or Kimi). It explains an order in simple English, Bengali or Hindi, works out where an appeal lies and the last date to file, and answers questions about the order. Appeal guidance must be verified before filing.</p></details>
+  <details class="faq"><summary>How does Tareekh keep AI costs low?</summary><p>Each order is read on the phone, straight from the PDF (OCR only for scanned pages), cleaned and indexed on the phone. A question sends only the few passages that match it; a synopsis summarises each order once and keeps the summary, so later updates cost only the new orders. The cost is shown before a synopsis runs.</p></details>
   <details class="faq"><summary>Is Tareekh free, and is my data private?</summary><p>Tareekh is free to download and use for your own practice. Cases, notes and orders stay on your phone; nothing is sent to the developer. Only if you connect an AI service is a document you ask about sent to that service, under your own key.</p></details>
   <details class="faq"><summary>Is Tareekh an official eCourts or court app?</summary><p>No. Tareekh is made by Patra's Law Chambers and is not affiliated with eCourts, NIC or any court. It works with the courts' public case-status pages.</p></details>
 
@@ -368,8 +394,8 @@
     </div>
   </div>
   <div class="cta">
-    <a class="btn" href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.3.apk">
-      <img src="img/icon.png" alt=""><span>Download for Android<small>Version 2.3 · free</small></span></a>
+    <a class="btn" href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.4.apk">
+      <img src="img/icon.png" alt=""><span>Download for Android<small>Version 2.4 · free</small></span></a>
     <div class="share">
       <a class="wa" href="https://wa.me/?text=%E2%9A%96%EF%B8%8F%20%2ATareekh%20%E2%80%93%20Court%20Case%20Monitor%20for%20Android%2A%20%28free%20app%20for%20advocates%29%0ADistrict%20courts%2C%20all%20High%20Courts%20and%20the%20Supreme%20Court%3A%20next%20dates%20with%20only%20the%20CAPTCHA%2C%20every%20order%20saved%20on%20the%20phone%2C%20AI%20explanation%20of%20orders.%20Download%3A%20https%3A//advocatesudippatra-spec.github.io/tareekh-court-case-monitoring/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/></svg>Share on WhatsApp</a>
       <a class="fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fadvocatesudippatra-spec.github.io%2Ftareekh-court-case-monitoring%2F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>Share on Facebook</a>
