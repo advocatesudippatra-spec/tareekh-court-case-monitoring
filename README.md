@@ -5,7 +5,7 @@
 
 ![Tareekh: case diary for advocates](docs/img/banner.jpg)
 
-<p align="center"><a href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.4.apk"><img src="docs/img/download-button.png" alt="Download Tareekh 2.4 for Android (APK)" width="340"></a></p>
+<p align="center"><a href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.6.apk"><img src="docs/img/download-button.png" alt="Download Tareekh 2.6 for Android (APK)" width="340"></a></p>
 
 <p align="center">Tap the button on your Android phone to download the app directly · <a href="docs/Tareekh-Screen-Guide.pdf">Screen guide (PDF)</a> · <a href="docs/Tareekh-Features.pdf">Features (PDF)</a></p>
 
@@ -13,15 +13,32 @@
 
 Tareekh works with the **public** case status pages of eCourts, the High Courts and the Supreme Court from inside the app: you choose the court, case type, number and year on Tareekh's own screen, the court's CAPTCHA picture is shown there, you type the answer, and the case opens in Tareekh. There is no need to visit the court's website yourself (it can still be seen with *Court's page*). Tareekh is not affiliated with eCourts, NIC or any court.
 
-**Website:** https://advocatesudippatra-spec.github.io/tareekh-court-case-monitoring/ · **Guide (every feature, and every screen explained with arrows):** [`docs/guide.html`](docs/guide.html) · PDF: [screen guide](docs/Tareekh-Screen-Guide.pdf), [features](docs/Tareekh-Features.pdf) · **Download the app:** [Tareekh-2.4.apk](https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.4.apk)
+**Website:** https://advocatesudippatra-spec.github.io/tareekh-court-case-monitoring/ · **Guide (every feature, and every screen explained with arrows):** [`docs/guide.html`](docs/guide.html) · PDF: [screen guide](docs/Tareekh-Screen-Guide.pdf), [features](docs/Tareekh-Features.pdf) · **Download the app:** [Tareekh-2.6.apk](https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.6.apk)
 
 `#Tareekh` `#CaseDiary` `#eCourts` `#CourtCaseStatus` `#CauseList` `#DistrictCourt` `#HighCourt` `#CalcuttaHighCourt` `#SupremeCourtOfIndia` `#LegalTech` `#AdvocateApp` `#LawyerApp` `#IndianLaw` `#NextDate` `#HearingReminder` `#CourtOrders` `#AndroidApp` `#PatrasLawChambers`
 
-**Contents:** [What's new](#whats-new-in-24) · [Your day](#your-day-with-tareekh) · [How it works](#how-it-works) · [Features](#features) · [Screen guide](#screen-guide) · [Download and install](#install) · [Your data](#your-data) · [Copyright](#copyright) · [Questions](#questions) · [About](#about-patras-law-chambers)
+**Contents:** [What's new](#whats-new-in-26) · [Your day](#your-day-with-tareekh) · [How it works](#how-it-works) · [Features](#features) · [Screen guide](#screen-guide) · [Download and install](#install) · [Your data](#your-data) · [Copyright](#copyright) · [Questions](#questions) · [About](#about-patras-law-chambers)
 
 ---
 
-## What's new in 2.4
+## What's new in 2.6
+
+**Next dates kept up to date with the least effort.** Tareekh lists only the cases whose date has passed without a newer one, and reminds you every Sunday morning.
+
+- **Update due**: a new list in Cases with every pending case whose date has passed (or is not known), oldest first. **Update all here** opens them one after another; you type each CAPTCHA. A case updated to a later date leaves the list until that date goes by; a case the portal has not updated comes up again next week by itself. The first time, all the cases with old dates appear together.
+- **Every Sunday at 9 am**: a notification with the number of cases due and an **Update all here** button; a **Weekly update** card on the Notes screen.
+- **Flag** on every case: for cases whose date the portal does not give. Flagged cases are kept under **Flagged**, for a court visit or a date entered by hand.
+- **Archive** on every case: archived cases are left out of the weekly update, the refresh and the evening checks; known hearings still show on the calendar.
+- **Cases views**: By date · Update due · Flagged · Pending · Archived · All · Disposed, with **Refresh pending** and **Update from the eCourts app's export** (many next dates at once, no CAPTCHA).
+- **Disposed status** follows the court's own words, shown as the court wrote it, with **Check again** on every disposed case. The CAPTCHA picture and answer box come first on the check screen.
+
+| Update due | Flag and Archive on a case | A flagged case moves to Flagged |
+|:-:|:-:|:-:|
+| <img src="docs/guide/new26-due.png" width="220"> | <img src="docs/guide/new26-detail.png" width="220"> | <img src="docs/guide/new26-flagged.png" width="220"> |
+
+**Readable guide to 2.6:** [What's new in 2.6 (web page)](docs/whats-new-2.6.html). *(Made-up example cases.)*
+
+## What came in 2.4
 
 **AI for whole cases, and for finding cases, at the lowest AI cost.** Every order is read **on the phone**, straight from the PDF (typed orders need no OCR; only scanned pages are read by OCR), kept as text, and indexed on the phone by keywords and by meaning. So only the passages that matter are sent to the AI service you connected.
 
@@ -123,6 +140,7 @@ If no AI service is connected, Tareekh says **"Connect an AI service first"** an
 4. Share or upload a summons as usual. Tareekh says *Reading with …* and fills the case form. If the service cannot be reached, Tareekh says so and uses the phone's own reading.
 
 ### Version history
+- **2.6** (26 Oct 2026): **Update due** list of cases whose date has passed, with **Update all here**; Sunday 9 am weekly update reminder; **Flag** and **Archive** on every case; new Cases views (Update due, Flagged, Pending, Archived, Disposed); Refresh pending; update from the eCourts app's export; disposed status in the court's own words; CAPTCHA first on the check screen.
 - **2.4**: case synopsis and Ask about this case (orders read on the phone, indexed by keywords and meaning, only matching passages sent); Ask AI to find a case, from your words or a summons; Ask AI about my cases; cause lists in plain words; text-only AI for orders; optional economy model.
 - **2.3** (1 Oct 2026): **Check here** on every case and **Check all here** for the evening checks: only the court's CAPTCHA is shown in Tareekh, and the case (next date, hearings, orders, calendar) is updated from it; Supreme Court cases can be checked too.
 - **2.2** (1 Oct 2026): ⋮ menu on every order with **Explain in simple terms** (English, Bengali, Hindi), **Appeal: where and by when** (forum, provision, limitation, last date, calendar) and **Ask about this order**; without an AI service, Tareekh asks you to connect one first.
@@ -420,9 +438,9 @@ Settings › Appearance › Dark (or follow the phone).
 
 ## Install
 
-<p align="center"><a href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.4.apk"><img src="docs/img/download-button.png" alt="Download Tareekh 2.4 for Android (APK)" width="340"></a></p>
+<p align="center"><a href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.6.apk"><img src="docs/img/download-button.png" alt="Download Tareekh 2.6 for Android (APK)" width="340"></a></p>
 
-1. On your Android phone, tap **Download Tareekh 2.4** above (or [this link](https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.4.apk)); the APK (about 47 MB) downloads directly.
+1. On your Android phone, tap **Download Tareekh 2.6** above (or [this link](https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.6.apk)); the APK (about 47 MB) downloads directly.
 2. Open it; allow installs from that source once; tap **Install**. A new version installs over the old one and keeps your cases, notes and orders.
 3. Open Tareekh and tap **Allow** for notifications and calendar. Set **Battery › Unrestricted** for Tareekh so the 6:30 pm check always comes.
 4. Add your cases: **Settings › Import** your eCourts app *My Cases* export, upload documents, or type them.
@@ -485,7 +503,7 @@ Founded in 2020 in Kolkata, with a second chamber in New Delhi since 2023, the f
 
 ---
 
-<p align="center"><a href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.4.apk"><img src="docs/img/download-button.png" alt="Download Tareekh 2.4 for Android (APK)" width="340"></a></p>
+<p align="center"><a href="https://github.com/advocatesudippatra-spec/tareekh-court-case-monitoring/raw/main/Tareekh-2.6.apk"><img src="docs/img/download-button.png" alt="Download Tareekh 2.6 for Android (APK)" width="340"></a></p>
 
 <p align="center">© 2026 Patra's Law Chambers · All rights reserved</p>
 
